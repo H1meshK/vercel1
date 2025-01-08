@@ -1,0 +1,103 @@
+@media screen and (max-width: 480px) {
+    /* responsive.css */
+
+/* Header Adjustments */
+.header {
+    height: 55px;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    position: fixed;
+    left: 1rem;
+
+}
+
+/* Controls Section */
+.controls {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.home-button {
+    width: 100%;
+    font-size: 0.85rem;
+    position: fixed;
+    top: 0.5rem;
+    right: 0.6rem;
+}
+
+/* Typography Adjustments */
+.heading-primary {
+    font-size: 2rem;
+}
+
+.heading-secondary {
+    font-size: 1rem;
+}
+
+/* Modal Adjustments */
+.modal__content {
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.modal__title {
+    font-size: 1.2rem;
+}
+
+.modal__info {
+    font-size: 0.85rem;
+}
+
+/* Layout Adjustments */
+.container {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 70px; /* Adjust for smaller header */
+}
+
+.events-container {
+    padding: 0.5rem;
+}
+
+.events-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+}
+
+/* Event Card Adjustments */
+.event-card {
+    padding: 0.7rem;
+}
+
+.event-card__title {
+    font-size: 0.6rem;
+}
+
+.event-card__description {
+    font-size: 0.5rem;
+}
+
+.event-card__buttons {
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+/* Button Adjustments */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    height: 1rem !important;
+    width: 3rem;
+    font-size: 0.45rem;
+}
+
+    }

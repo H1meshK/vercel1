@@ -1,0 +1,45 @@
+/* Layout styles */
+.container {
+    width: 1300px;
+    margin-top: 90px;
+    padding: 2rem;
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.events-container {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    padding: 0.8rem;
+}
+
+.events-grid {
+    height: 100%;
+    overflow-y: auto;
+    display: grid;
+    gap: 1.2rem;
+    padding-right: 1rem;
+}
+
+/* Custom Scrollbar */
+.events-grid::-webkit-scrollbar {
+    width: 8px;
+}
+
+.events-grid::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.events-grid::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.events-grid::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+}

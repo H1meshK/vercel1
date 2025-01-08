@@ -1,0 +1,139 @@
+/* buttons.css */
+.auth-buttons button {
+    padding: 0.7rem 1.5rem;
+    margin: 10px 10px 10px 10px;
+    font-size: 14px;
+    letter-spacing: 0.05rem;
+    font-weight: 600;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .auth-buttons button:hover {
+    background-color: #c1bc91;
+    box-shadow: 0px 15px 20px rgba(130, 128, 110, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .auth-buttons button:active {
+    transform: translateY(-1px);
+  }
+
+
+/* Navigation Buttons */
+.nav-bar button {
+    background-color: #333;
+    border: none;
+    color: white;
+    height: 45px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Josefin Sans", serif;
+    font-size: 14px;
+    font-weight: 350;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-bar button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.nav-bar button:hover::before {
+    left: 100%;
+}
+
+.nav-bar button:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.nav-bar button:last-child {
+    background-color: #eee;
+    color: #333;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Applying animations */
+.header {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.masonry-item {
+    animation: fadeIn 0.5s ease-in;
+    animation-delay: calc(var(--item-index) * 0.1s); /* Staggered effect */
+}
+
+.masonry-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.modal-content {
+    animation: modalFadeIn 0.3s ease-out;
+}

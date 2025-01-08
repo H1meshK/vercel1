@@ -1,0 +1,15 @@
+/* navbar.css */
+.nav-bar {
+    position: fixed;
+    bottom: 6%;
+    left: calc(50% - 290px);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(30, 30, 30, 0.4);
+    height: 75px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}

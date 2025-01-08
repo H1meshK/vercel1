@@ -1,0 +1,154 @@
+
+/* For max-width: 1024px (tablets and large screens) */
+@media (max-width: 1024px) {
+    .contentt {
+        width: 95%; /* Adjust width for tablets */
+        top: 120px; /* Adjust positioning */
+        font-size: 1.2rem; /* Slightly smaller font for smaller screens */
+        text-align: left;
+        flex-wrap: nowrap;
+        margin-left: 15px; 
+        overflow: auto;
+    }
+    
+    .box-container {
+        display: none;
+    }
+}
+
+/* For max-width: 768px (tablets and small tablets) */
+@media (max-width: 768px) {
+    .contentt {
+        width: 95%; /* Use more width on smaller screens */
+        top: 110px; /* Adjust top for mobile screens */
+        font-size: 1rem; /* Smaller font size */
+    }
+    
+    .box-container {
+        display: none;
+    }
+}
+
+/* For max-width: 570px (small tablets, larger smartphones) */
+@media (max-width: 570px) {
+    .contentt {
+        width: 95%; /* Further reduce width */
+        top: 110px; /* Adjust top margin */
+        font-size: 0.9rem; /* Adjust font size */
+        margin-left: 5px; /* Further reduce left margin */
+    }
+    
+    .box-container {
+        display: none;
+    }
+}
+
+/* For max-width: 504px (larger smartphones) */
+@media (max-width: 504px) {
+    .contentt {
+        width: 95%; /* Maximize content width */
+        top: 110px; /* Adjust position */
+        font-size: 0.85rem; /* Smaller font size */
+    }
+    
+    .box-container {
+        display: none;
+    }
+}
+
+/* For max-width: 435px (small smartphones) */
+@media (max-width: 435px) {
+    .contentt {
+        width: 95%; /* Take full width of the screen */
+        top: 110px; /* Adjust top positioning */
+        font-size: 0.9rem; /* Further reduce font size */
+    }
+    
+    .box-container {
+        display: none;
+    }
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .header h1 {
+        font-size: 40px; /* Reduce font size for smaller screens */
+    }
+
+    .home-button {
+        font-size: 16px; /* Adjust font size for buttons */
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0.8rem; /* Adjust padding for smaller screens */
+    }
+
+    .header h1 {
+        font-size: 36px; /* Reduce font size */
+    }
+
+    .home-button {
+        font-size: 14px; /* Adjust button text size */
+        padding: 0.8rem 1.5rem; /* Adjust button size */
+    }
+}
+
+@media (max-width: 570px) {
+    .header {
+        flex-direction: row; /* Stack elements vertically */
+        align-items: center; /* Center align items */
+        padding: 0.8rem 0.3rem; /* Adjust padding */
+    }
+
+    .header h1 {
+        font-size: 25px; /* Further reduce font size */
+    }
+
+    .controls {
+        margin-top: 10px; /* Space between title and buttons */
+    }
+
+    .home-button {
+        font-size: 12px; /* Further adjust font size */
+        padding: 0.7rem 1.2rem; /* Further reduce button size */
+    }
+}
+
+@media (max-width: 504px) {
+    .header {
+        padding: 0.8rem 0.5rem; /* Reduce padding */
+    }
+
+    .header h1 {
+        font-size: 28px; /* Further reduce font size */
+    }
+
+    .home-button {
+        font-size: 12px;
+        padding: 0.6rem 1.1rem; /* Adjust button padding */
+    }
+}
+
+@media (max-width: 435px) {
+    .header {
+        padding: 0.6rem 0.5rem; /* Reduce padding */
+    }
+
+    .header h1 {
+        font-size: 24px; /* Further reduce font size */
+    }
+
+    .home-button {
+        font-size: 10px; /* Further adjust font size */
+        padding: 0.6rem 1rem; /* Adjust button size */
+    }
+}

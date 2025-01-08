@@ -1,0 +1,103 @@
+/* main.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    transition: background-image 1.5s ease; /* Smooth transition */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Add smooth transition to all elements that change colors */
+h1, .nav-bar button {
+    transition: color 0.4s ease, background-color 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  /* For the hover effect of the buttons */
+ .nav-bar button:hover {
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  }
+
+header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .logo {
+    position: absolute;
+    top: 1px;
+    margin-left: 20px;
+}
+
+header .buttons {
+    display: flex;
+    margin-right: 15px;
+}
+
+header .auth-buttons {
+    position: absolute;
+    top: 15px; /* Adjust the distance from the top */
+    right: 20px; /* Adjust the distance from the right */
+    display: flex;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+.content {
+    position: fixed;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px; /* To avoid overlap with the header */
+    padding-bottom: 160px;
+    position: relative;
+}
+
+.content h1 {
+    font-family: "Jockey One", serif;
+    line-height: 0.88;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140px;
+    margin: 0;
+}
+
+.content p {
+    font-family: "Josefin Sans", serif;
+    font-size: 2.0em;
+    margin-top: 16px;
+}

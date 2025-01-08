@@ -1,0 +1,16 @@
+/* Typography styles */
+.heading-primary {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.heading-secondary {
+    color: #9ca3af;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 2rem;
+}

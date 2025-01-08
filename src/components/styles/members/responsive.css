@@ -1,0 +1,292 @@
+/* General styles for members-container */
+
+/* For max-width: 1024px (tablets and large screens) */
+@media (max-width: 1024px) {
+    .members-container {
+        width: 90%; /* Reduce width for smaller screens */
+        left: 5%; /* Center the container horizontally */
+        height: calc(100vh - 120px); /* Adjust height for smaller viewports */
+        border: 10px solid rgba(0, 0, 0, 0.05); /* Adjust border thickness */
+    }
+
+    .members-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust column width */
+        gap: 15px; /* Adjust gap between grid items */
+        padding: 0.8rem; /* Reduce padding */
+    }
+}
+
+/* For max-width: 768px (tablets and small tablets) */
+@media (max-width: 768px) {
+    .members-container {
+        top: 10%;
+        left: 5%;
+        width: 90%; /* Keep the container centered */
+        height: calc(100vh - 100px); /* Further reduce height */
+        border-radius: 15px; /* Adjust border radius for compact view */
+    }
+
+    .members-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Smaller column width */
+        gap: 12px; /* Reduce gap */
+        padding: 0.6rem; /* Adjust padding */
+    }
+}
+
+/* For max-width: 570px (small tablets, larger smartphones) */
+@media (max-width: 570px) {
+    .members-container {
+        top: 5%;
+        left: 3%;
+        width: 92%; /* Adjust width for small tablets */
+        height: calc(100vh - 90px); /* Adjust height */
+        border-radius: 12px; /* Slightly reduce the border radius */
+    }
+
+    .members-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Further reduce column width */
+        gap: 10px; /* Adjust gap */
+        padding: 0.5rem; /* Adjust padding for compact layout */
+    }
+}
+
+/* For max-width: 504px (larger smartphones) */
+@media (max-width: 504px) {
+    .members-container {
+        top: 5%;
+        left: 2%;
+        width: 94%; /* Use more screen space */
+        height: calc(100vh - 80px); /* Further reduce height */
+        border-radius: 10px; /* Keep smaller border radius */
+    }
+
+    .members-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); /* Smaller columns */
+        gap: 8px; /* Adjust gap */
+        padding: 0.4rem; /* Minimal padding */
+    }
+}
+
+
+
+/* General styles for header */
+
+/* For max-width: 1024px (tablets and large screens) */
+@media (max-width: 1024px) {
+    .header {
+        padding: 1rem 1.5rem; /* Reduce padding for smaller screens */
+        justify-content: space-between; /* Keep the layout flexible */
+    }
+
+    .header h1 {
+        font-size: 40px; /* Reduce font size */
+    }
+
+    .search-container {
+        max-width: 500px; /* Adjust width for smaller devices */
+        margin: 0 1.5rem; /* Reduce horizontal margin */
+    }
+
+    .search-input {
+        padding: 0.7rem 1rem; /* Adjust input padding */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .controls {
+        gap: 0.8rem; /* Reduced gap between control items */
+    }
+
+    .filter-select {
+        padding: 0.7rem 1rem; /* Adjust padding */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .home-button {
+        padding: 0.7rem 1.5rem; /* Adjust button padding */
+        font-size: 16px; /* Smaller font size */
+    }
+}
+
+/* For max-width: 768px (tablets and small tablets) */
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem; /* Reduce padding further */
+    }
+
+    .header h1 {
+        font-size: 15px; /* Smaller font size for smaller tablets */
+    }
+
+    .search-container {
+        max-width: 280px; /* Reduce search container width */
+        margin: 0 1rem; /* Decrease horizontal margin */
+    }
+
+    .search-input {
+        padding: 0.6rem 0.9rem; /* Smaller padding */
+        font-size: 0.8rem; /* Adjust font size */
+    }
+
+    .controls {
+        gap: 0.6rem; /* Further reduce gap */
+    }
+
+    .filter-select {
+        padding: 0.6rem 0.9rem; /* Adjust padding */
+        font-size: 13px; /* Smaller font size */
+    }
+
+    .home-button {
+        padding: 0.6rem 1.3rem; /* Reduce padding */
+        font-size: 12px; /* Smaller font size */
+    }
+}
+
+/* For max-width: 570px (small tablets, larger smartphones) */
+@media (max-width: 570px) {
+    .header {
+        padding: 0.8rem 1rem; /* Minimal padding */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align items */
+    }
+
+    .header h1 {
+        font-size: 30px; /* Further reduce font size */
+        text-align: center; /* Center-align heading */
+    }
+
+    .search-container {
+        max-width: 350px; /* Adjust search container */
+        margin: 1rem 0; /* Vertical margin */
+    }
+
+    .search-input {
+        padding: 0.5rem 0.8rem; /* Smaller padding */
+        font-size: 0.75rem; /* Smaller font size */
+    }
+
+    .controls {
+        gap: 0.5rem; /* Reduce gap */
+    }
+
+    .filter-select {
+        padding: 0.5rem 0.8rem; /* Adjust padding */
+        font-size: 12px; /* Smaller font size */
+    }
+
+    .home-button {
+        padding: 0.5rem 1.2rem; /* Reduce padding */
+        font-size: 14px; /* Smaller font size */
+    }
+}
+
+/* For max-width: 504px (larger smartphones) */
+@media (max-width: 504px) {
+    .header {
+        padding: 0.7rem 1rem; /* Slightly adjust padding */
+        flex-direction: column; /* Keep stacking items */
+        align-items: center; /* Keep items centered */
+    }
+
+    .header h1 {
+        font-size: 28px; /* Smaller font size for small smartphones */
+    }
+
+    .search-container {
+        max-width: 300px; /* Further reduce search container */
+        margin: 1rem 0; /* Keep vertical margin */
+    }
+
+    .search-input {
+        padding: 0.4rem 0.7rem; /* Adjust padding */
+        font-size: 0.7rem; /* Smaller font size */
+    }
+
+    .controls {
+        gap: 0.4rem; /* Reduce gap */
+    }
+
+    .filter-select {
+        padding: 0.4rem 0.7rem; /* Adjust padding */
+        font-size: 11px; /* Smaller font size */
+    }
+
+    .home-button {
+        padding: 0.4rem 1.1rem; /* Reduce padding */
+        font-size: 13px; /* Smaller font size */
+    }
+
+}
+
+/* For max-width: 435px (small smartphones) */
+@media (max-width: 435px) {
+    .header {
+        border-radius: 0 0 15px 15px;
+        height: 60px;
+        position: fixed;
+    }
+
+    .header h1 {
+        font-size: 16px !important;
+        line-height: 22px;
+        position: fixed;
+        left: 3%; /* Smallest font size for very small screens */
+    }
+
+    .search-input {
+        width: 140px !important;
+        position: fixed;
+        font-size: 8px !important;
+        top: 32%;
+        left: 28%;/* Small font size */
+    }
+
+    .controls {
+        gap: 0.3rem; /* Tighten gap */
+    }
+
+    .filter-select {
+        padding: 0.4rem 0.6rem; /* Adjust padding */
+        font-size: 10px; /* Small font size */
+    }
+
+    .home-button {
+        padding: 0.4rem 1rem; /* Reduce padding */
+        font-size: 12px; /* Smallest font size */
+    }
+    .members-container {
+        top: 10%;
+        left: 1%;
+        width: 96%; /* Maximize width */
+        height: calc(100vh - 70px); /* Use as much height as possible */
+        border-radius: 8px; /* Further reduce border radius */
+    }
+
+    .members-grid {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); /* Very small columns */
+        gap: 5px; /* Tighten the gap */
+        padding: 0.3rem; /* Minimal padding */
+    }
+    .member-overlay{
+display: flex !important;
+justify-content: flex-end;
+align-items: start;
+padding: 18%;
+padding-left: 6%;
+    }
+    .social-links{
+        height: 29px !important;
+    }
+    .member-specialty{
+font-size: 0.6rem;
+line-height: 5px;
+    }
+    .member-year{
+        font-size: 0.7rem;
+        line-height: 10px;
+    }
+    .member-name{
+        font-size: 0.9rem;
+        line-height: 13px;
+    }
+}

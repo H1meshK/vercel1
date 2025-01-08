@@ -1,0 +1,37 @@
+/* Card styles */
+.event-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    padding: 1.2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.event-card__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.event-card__text {
+    flex: 1;
+}
+
+.event-card__title {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.event-card__description {
+    color: #9ca3af;
+    font-size: 0.94rem;
+}
+
+.event-card__buttons {
+    display: flex;
+    gap: 0.75rem;
+}

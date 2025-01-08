@@ -1,0 +1,199 @@
+/* responsive.css */
+
+/* General responsiveness for screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+    .nav-bar {
+        bottom: 4%;
+        left: 5%;
+        right: 5%;
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: center; /* Center items */
+        gap: 10px; /* Reduce the gap between elements */
+        height: auto; /* Adjust height */
+        padding: 15px 10px; /* Adjust padding */
+    }
+
+    .nav-bar button {
+        height: 40px;
+        padding: 5px 12px;
+        font-size: 12px; /* Reduce font size */
+    }
+}
+
+/* Specific responsiveness for screens smaller than 480px (phones) */
+@media (max-width: 490px) {
+    .nav-bar {
+        bottom: 3%;
+        gap: 8px; /* Further reduce the gap */
+        padding: 10px 8px;
+        flex-wrap: wrap; /* Stack buttons vertically */
+    }
+
+    .nav-bar button {
+        width: 30%; /* Make buttons full-width */
+        text-align: center; /* Center text */
+    }
+
+}
+
+/* Responsive styles for .content */
+
+/* General responsiveness for screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+    .content {
+        padding-top: 100px; /* Adjust padding for smaller screens */
+        padding-bottom: 120px;
+    }
+
+    .content h1 {
+        font-size: 80px; /* Reduce font size */
+        line-height: 1.1; /* Adjust line height for better readability */
+        text-align: center; /* Center-align text for smaller screens */
+    }
+
+    .content p {
+        font-size: 1.5em; /* Reduce font size */
+        text-align: center; /* Center-align paragraphs */
+        margin-top: 12px; /* Adjust margin */
+    }
+}
+
+/* Specific responsiveness for screens smaller than 480px (phones) */
+@media (max-width: 480px) {
+    .content {
+        padding-top: 80px; /* Further reduce padding */
+        padding-bottom: 100px;
+    }
+
+    .content h1 {
+        font-size: 60px; /* Further reduce font size */
+    }
+
+    .content p {
+        font-size: 1.2em; /* Further reduce font size */
+    }
+}
+/* Responsive styles for header */
+
+/* General responsiveness for screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row; /* Stack elements vertically */
+        padding: 15px 10px; /* Adjust padding */
+    }
+
+    header .logo {
+        position: static; /* Allow it to flow naturally */
+        margin-left: 15px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        height: 50px; /* Add spacing below logo */
+    }
+
+    header .buttons {
+        margin-right: 60px; /* Remove unnecessary right margin */
+        justify-content: center; /* Center-align buttons */
+    }
+
+    header .auth-buttons {
+        position: static; /* Remove absolute positioning */
+        margin-top: 10px; /* Add spacing above */
+        justify-content: center; /* Center-align auth buttons */
+    }
+
+    .auth-buttons button {
+        padding: 0.5rem 1rem; /* Reduce padding */ /* Adjust margin */
+        font-size: 12px; /* Reduce font size */
+    }
+}
+
+/* Specific responsiveness for screens smaller than 480px (phones) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 5px; /* Further reduce padding */
+    }
+
+    .auth-buttons button {
+        padding: 0.4rem 0.8rem; /* Further reduce padding */
+        font-size: 9px; /* Further reduce font size */
+        margin-right: 8px; /* Adjust margin */
+    }
+}
+
+/* Responsive styles for contact-modal */
+
+/* General responsiveness for screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+    .contact-content {
+        padding: 2rem; /* Reduce padding */
+        width: 90%; /* Increase width to use more screen space */
+        max-width: 400px; /* Reduce max-width for better fit on tablets */
+    }
+
+    .contact-title {
+        font-size: 2.2rem; /* Reduce font size for smaller screens */
+        margin-bottom: 1.5rem; /* Adjust spacing */
+    }
+
+    .contact-buttons {
+        gap: 0.8rem; /* Reduce gap between buttons */
+        margin-top: 1.5rem; /* Adjust margin */
+    }
+
+    .contact-button {
+        padding: 0.8rem; /* Reduce padding */
+        font-size: 0.9rem; /* Reduce font size */
+        gap: 0.6rem; /* Reduce gap between icon and text */
+    }
+
+    .close-modal {
+        top: 0.8rem; /* Adjust position */
+        right: 0.8rem; /* Adjust position */
+        font-size: 1.2rem; /* Reduce size */
+        width: 35px; /* Reduce width */
+        height: 35px; /* Reduce height */
+    }
+}
+
+/* Specific responsiveness for screens smaller than 480px (phones) */
+@media (max-width: 480px) {
+    .contact-content {
+        padding: 1.5rem; /* Further reduce padding */
+        width: 80%; /* Use almost full screen width */
+        max-width: 350px; /* Further reduce max-width */
+    }
+
+    .contact-title {
+        font-size: 1.8rem; /* Further reduce font size */
+        margin-bottom: 1rem; /* Adjust spacing */
+    }
+
+    .contact-buttons {
+        gap: 0.6rem; /* Further reduce gap between buttons */
+        margin-top: 1rem; /* Adjust margin */
+    }
+
+    .contact-button {
+        padding: 0.6rem; /* Further reduce padding */
+        font-size: 0.8rem; /* Further reduce font size */
+        gap: 0.5rem; /* Further reduce gap */
+    }
+
+    .close-modal {
+        top: 0.6rem; /* Adjust position */
+        right: 0.6rem; /* Adjust position */
+        font-size: 1rem; /* Further reduce size */
+        width: 30px; /* Further reduce width */
+        height: 30px; /* Further reduce height */
+    }
+}
+
+@media (max-width: 370px){
+    header .logo {
+        position: static; /* Allow it to flow naturally */
+        margin-left: 15px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        width: 70px;
+    }
+}

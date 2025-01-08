@@ -1,0 +1,26 @@
+/* Button styles */
+.btn {
+    padding: 0.7rem 1.3rem;
+    margin: 0px 3px 0px 3px;
+    border-radius: 0.75rem;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn--info {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.btn--register {
+    background: #d1c4b1;
+    color: #1a1a1a;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
