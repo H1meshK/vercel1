@@ -12,19 +12,16 @@ const Gallery = () => {
 
   useEffect(() => {
 
-    // Swatches.js functionality with animations
     const swatches = document.querySelectorAll('.swatch');
   
     swatches.forEach(swatch => {
       const color = swatch.getAttribute('data-color');
-  
-      // Create and append tooltip
+
       const tooltip = document.createElement('div');
       tooltip.className = 'tooltip';
       tooltip.textContent = color;
       swatch.appendChild(tooltip);
-  
-      // Hover animation for tooltip and swatch scaling
+
       swatch.addEventListener('mouseover', () => {
         tooltip.style.opacity = '1';
         swatch.style.transform = 'scale(1.1)';
@@ -72,8 +69,7 @@ const Gallery = () => {
 
     function createMasonryGrid() {
       const grid = document.getElementById('masonryGrid');
-      
-      // Clear the grid before adding items
+
       grid.innerHTML = ''; 
    
       artworks.forEach(artwork => {
