@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import './App.css'; // You can include any global styles here
+import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Gallery from './components/Gallery'; // Import the component
+import Gallery from './components/Gallery';
 import FineArtsSociety from './components/FineArtsSociety';
-import Members from './components/Members'; // Import the component
+import Members from './components/Members';
 import About from './components/About';
 import Events from './components/Events';
 
