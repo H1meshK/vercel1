@@ -7,7 +7,6 @@ import './styles/events/responsive.css';
 
 
 const eventsData = [
-    // Populate this array with your events data
     {
         title: "Tech Conference 2024",
         description: "Join us for the biggest tech conference of the year featuring industry leaders and innovative workshops.",
