@@ -15,8 +15,8 @@ const backgrounds = [
       text: '#fff', 
       header: '#979797', 
       navButton: '#333', 
-      navButtonLastChild: '#979797', // Color for last button
-      navButtonLastChildText: '#000', // Text color for last button
+      navButtonLastChild: '#979797', 
+      navButtonLastChildText: '#000',
       authButtonHover: '#2b272e', 
       authButtonBoxShadow: '0px 15px 20px rgba(81, 73, 87, 0.4)' 
     }
@@ -27,8 +27,8 @@ const backgrounds = [
       text: '#fff', 
       header: '#b5d2f7', 
       navButton: '#1e4463', 
-      navButtonLastChild: '#78c2ff', // Color for last button
-      navButtonLastChildText: '#0c2b45', // Text color for last button
+      navButtonLastChild: '#78c2ff', 
+      navButtonLastChildText: '#0c2b45',
       authButtonHover: '#F3B989', 
       authButtonBoxShadow: '0px 15px 20px rgba(70, 130, 180, 0.4)' 
     }
@@ -39,8 +39,8 @@ const backgrounds = [
       text: '#e8e8e8', 
       header: '#c7c7c7', 
       navButton: '#444', 
-      navButtonLastChild: '#eee', // Color for last button
-      navButtonLastChildText: '#333', // Text color for last button
+      navButtonLastChild: '#eee',
+      navButtonLastChildText: '#333',
       authButtonHover: '#4682b4', 
       authButtonBoxShadow: '0px 15px 20px rgba(70, 130, 180, 0.4)' 
     }
@@ -54,10 +54,10 @@ const FineArtsSociety = () => {
     let index = 0;
 
     const changeBackground = () => {
-      setCurrentBackground(index); // Update background and colors
+      setCurrentBackground(index);
       document.body.style.backgroundImage = backgrounds[index].url;
       
-      // Change text color
+
       document.querySelector('h1').style.color = backgrounds[index].color.text;
       document.querySelectorAll('h1')[1].style.color = backgrounds[index].color.header; // Update second h1
 
