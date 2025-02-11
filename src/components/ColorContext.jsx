@@ -1,7 +1,5 @@
-// ColorContext.js
 import React, { createContext, useState, useContext } from 'react';
 
-// Create a context for managing background colors
 const ColorContext = createContext();
 
 export const useColor = () => {
